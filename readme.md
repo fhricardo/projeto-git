@@ -1,5 +1,7 @@
 # Entendendo Git e GitHub
 
+**Confira essa aula no YouTube [clicando aqui](https://youtu.be/anr9aDIJ3YM "Aula sobre Git e GitHub no YouTube")**
+
 ## O que é Git?
 
 Git é um sistema de controle de versão distribuído amplamente utilizado para rastrear as mudanças em arquivos de código-fonte durante o desenvolvimento de software. Ele permite que várias pessoas trabalhem em um mesmo projeto, façam alterações nos arquivos e gerenciem essas mudanças de forma eficiente. Com o Git, os desenvolvedores podem acompanhar o histórico completo de alterações em um projeto, comparar versões anteriores, mesclar diferentes alterações e até mesmo reverter para uma versão anterior, se necessário.
