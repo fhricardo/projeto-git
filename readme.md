@@ -15,7 +15,7 @@ No geral, o Git é uma ferramenta essencial para o desenvolvimento de software c
 Para utilizar o sistema de controle de versão Git em seus projetos, é necessário instalar o Git em seu computador local.
 O link para download é o listado abaixo:
 
-[link](https://git-scm.com/ "Download do Git").
+[https://git-scm.com/](https://git-scm.com/ "Download do Git").
 
 Após fazer o download, basta instalar o Git em seu computador. Não são necessárias configurações avançadas.
 
@@ -37,7 +37,7 @@ Em resumo, o GitHub é uma plataforma essencial para o desenvolvimento de softwa
 
 Para utilizar o GitHub, é necessário criar uma conta na plataforma e realizar o login com seu usuário e senha.
 
-O endereço para a plataforma é [link](https://github.com/ "https://github.com/").
+O endereço para a plataforma é [https://github.com/](https://github.com/ "https://github.com/").
 
 #### Criando um novo Repositório
 
@@ -73,7 +73,7 @@ O resultado deve ser algo do tipo:
 
 ### Para adicionar o repositório remoto à um projeto Git
 
-`git remote add origin endereço_do_repositório`
+`git remote add origin https://github.com/fhricardo/projeto-git.git`
 
 ### Para realizar um commit de um repositório
 
@@ -94,10 +94,10 @@ O resultado deve ser algo do tipo:
 ## Documentação Oficial
 
 Para entender mais sobre esses e outros comandos Git, recomendo visitar a documentação oficial em:
-[link](https://git-scm.com/doc "https://git-scm.com/doc").
+[https://git-scm.com/doc](https://git-scm.com/doc "https://git-scm.com/doc").
 
 ## Entendendo o Markdown
 
 Para entender um pouco mais sobre a linguagem Markdown (.md) recomendo a visita a este site:
 
-[link](https://wordpress.com/support/markdown-quick-reference/ "Referências Rápidas de Markdown *(em inglês)*")
+[Referências Rápidas de Markdown _(em inglês)_](https://wordpress.com/support/markdown-quick-reference/ "Referências Rápidas de Markdown (em inglês)")
