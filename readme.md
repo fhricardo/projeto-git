@@ -107,10 +107,10 @@ Para entender um pouco mais sobre a linguagem Markdown (.md) recomendo a visita 
    Exemplo: https://github.com/fhricardo/custom-forms-html-css.git
 
 2. Executar os comandos:
-   `git init` - para inicializar o repositório local
-   `git branch -M main` - para renomear a Branch Principal
-   `git add .` - para adicionar todos os arquivos locais (da pasta) ao repositório local
-   `git remote add origin endereço_do_repositório` - para adicionar o repositório remoto
-   Ex.: `git remote add origin https://github.com/fhricardo/custom-forms-html-css.git`
-   `git commit -m "Breve descrição da commit"` - para fazer a commit do repositório
-   `git push origin main` - para enviar os arquivos para o repositório remoto
+   - `git init` - para inicializar o repositório local
+   - `git branch -M main` - para renomear a Branch Principal
+   - `git add .` - para adicionar todos os arquivos locais (da pasta) ao repositório local
+   - `git remote add origin endereço_do_repositório` - para adicionar o repositório remoto
+     Ex.: `git remote add origin https://github.com/fhricardo/custom-forms-html-css.git`
+   - `git commit -m "Breve descrição da commit"` - para fazer a commit do repositório
+   - `git push origin main` - para enviar os arquivos para o repositório remoto
