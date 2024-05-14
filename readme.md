@@ -1,6 +1,6 @@
 # Entendendo Git e GitHub
 
-**Confira essa aula no YouTube [clicando aqui](https://youtu.be/anr9aDIJ3YM "Aula sobre Git e GitHub no YouTube")**
+**Confira essa aula no YouTube [clicando aqui](https://youtu.be/anr9aDIJ3YM "Aula sobre Git e GitHub no YouTube"){:target="\_blank"}**
 
 ## O que é Git?
 
