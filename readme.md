@@ -1,6 +1,6 @@
 # Entendendo Git e GitHub
 
-**Confira essa aula no YouTube [clicando aqui](https://youtu.be/anr9aDIJ3YM "Aula sobre Git e GitHub no YouTube"){:target="\_blank"}**
+**Confira essa aula no YouTube [clicando aqui](https://youtu.be/anr9aDIJ3YM "Aula sobre Git e GitHub no YouTube"{:target="\_blank"})**
 
 ## O que é Git?
 
@@ -17,7 +17,7 @@ No geral, o Git é uma ferramenta essencial para o desenvolvimento de software c
 Para utilizar o sistema de controle de versão Git em seus projetos, é necessário instalar o Git em seu computador local.
 O link para download é o listado abaixo:
 
-[https://git-scm.com/](https://git-scm.com/ "Download do Git").
+[https://git-scm.com/](https://git-scm.com/ "Download do Git"){:target="\_blank"}.
 
 Após fazer o download, basta instalar o Git em seu computador. Não são necessárias configurações avançadas.
 
@@ -39,7 +39,7 @@ Em resumo, o GitHub é uma plataforma essencial para o desenvolvimento de softwa
 
 Para utilizar o GitHub, é necessário criar uma conta na plataforma e realizar o login com seu usuário e senha.
 
-O endereço para a plataforma é [https://github.com/](https://github.com/ "https://github.com/").
+O endereço para a plataforma é [https://github.com/](https://github.com/ "https://github.com/"){:target="\_blank"}.
 
 #### Criando um novo Repositório
 
@@ -96,10 +96,10 @@ O resultado deve ser algo do tipo:
 ## Documentação Oficial
 
 Para entender mais sobre esses e outros comandos Git, recomendo visitar a documentação oficial em:
-[https://git-scm.com/doc](https://git-scm.com/doc "https://git-scm.com/doc").
+[https://git-scm.com/doc](https://git-scm.com/doc "https://git-scm.com/doc"){:target="\_blank"}.
 
 ## Entendendo o Markdown
 
 Para entender um pouco mais sobre a linguagem Markdown (.md) recomendo a visita a este site:
 
-[Referências Rápidas de Markdown _(em inglês)_](https://wordpress.com/support/markdown-quick-reference/ "Referências Rápidas de Markdown (em inglês)")
+[Referências Rápidas de Markdown _(em inglês)_](https://wordpress.com/support/markdown-quick-reference/ "Referências Rápidas de Markdown (em inglês)"){:target="\_blank"}
