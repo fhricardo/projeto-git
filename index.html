@@ -149,35 +149,35 @@
                 vincular o repositório local com o repositório remoto.</p>
             <h2><i class="fa-solid fa-terminal"></i>Comandos Git</h2>
             <p>Para verificar a versão do Git, dentro do terminal do Visual Studio Code, digite:</p>
-            <pre><code>git --version</code></pre>
+            <code>git --version</code>
             <p>O resultado deve ser algo do tipo:</p>
-            <pre><code>git version 2.45.0.windows.1</code></pre>
+            <code>git version 2.45.0.windows.1</code>
             <p>Para configurar o nome do usuário do Git</p>
-            <pre><code>git config --global user.name "Nome do Usuário"</code></pre>
+            <code>git config --global user.name "Nome do Usuário"</code>
             <p>Para configurar o email do usuário do Git</p>
-            <pre><code>git config --global user.email "email@exemplo.com"</code></pre>
+            <code>git config --global user.email "email@exemplo.com"</code>
             <p>Para inicializar um repositório:</p>
-            <pre><code>git init</code></pre>
+            <code>git init</code>
             <p>Para alterar o nome da branch principal</p>
-            <pre><code>git branch -M main</code></pre>
+            <code>git branch -M main</code>
             <p>Para adicionar um arquivo específico à uma branch</p>
-            <pre><code>git add readme.md</code></pre>
+            <code>git add readme.md</code>
             <p>Para verificar o status de um repositório local Git</p>
-            <pre><code>git status</code></pre>
+            <code>git status</code>
             <p>Para adicionar o repositório remoto à um projeto Git</p>
-            <pre><code>git remote add origin https://github.com/fhricardo/nome-do-projeto.git</code></pre>
+            <code>git remote add origin https://github.com/fhricardo/nome-do-projeto</code>
             <p>Para realizar um commit de um repositório</p>
-            <pre><code>git commit -m "Primeiro Commit"</code></pre>
+            <code>git commit -m "Primeiro Commit"</code>
             <p>Para enviar um commit ao repositório remoto</p>
-            <pre><code>git push -u origin main</code></pre>
+            <code>git push -u origin main</code>
             <p>Para adicionar todos os arquivos do projeto para um commit</p>
-            <pre><code>git add .</code></pre>
+            <code>git add .</code>
             <p>Para atualizar o repositório remoto com o repositório local</p>
-            <pre><code>git push origin main</code></pre>
+            <code>git push origin main</code>
             <p>Para atualizar o repositório local com o repositório remoto</p>
-            <pre><code>git pull origin main</code></pre>
+            <code>git pull origin main</code>
             <p>Para verificar as configurações do Git</p>
-            <pre><code>git config --list</code></pre>
+            <code>git config --list</code>
             <h2>Documentação Oficial</h2>
             <p>Para entender mais sobre esses e outros comandos Git, recomendo visitar a documentação oficial em: <a
                     href="https://git-scm.com/doc" target="_blank" title="Documentação Git">https://git-scm.com/doc</a>
@@ -203,7 +203,9 @@
                 <li>Mensagens em fóruns ou comentários</li>
             </ul>
             <h3>Exemplos rápidos:</h3>
-            <pre><code># Título de Nível 1
+            <div class="code-block">
+                <div class="line-numbers"></div>
+                <pre><code># Título de Nível 1
 ## Título de Nível 2
 
 **Negrito** ou __negrito__
@@ -212,6 +214,7 @@
 ![Uma imagem](imagem.png)
 - Item de lista
 1. Item numerado</code></pre>
+            </div>
             <h3>O que acontece por trás:</h3>
             <p>Você escreve com uma sintaxe simples e um conversor Markdown transforma esse texto em HTML válido,
                 que

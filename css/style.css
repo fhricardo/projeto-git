@@ -21,17 +21,23 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
+    height: 2.5rem;
     font-weight: 400;
     color: #464646;
     margin-bottom: .5rem;
+    display: flex;
 
+    i {
+        color: dodgerblue;
+        font-size: 2.5rem;
+    }
 }
 
 h3 {
     font-size: 1.6rem;
     font-weight: 400;
     color: #464646;
-    margin-bottom: .5rem;
+    margin: .5rem 0;
     padding-left: 0.5rem;
     border-left: 10px solid dodgerblue;
 }
@@ -40,7 +46,9 @@ h4 {
     font-size: 1.4rem;
     font-weight: 600;
     color: #464646;
-    margin-bottom: .5rem;
+    margin: .5rem 0;
+    padding-left: 0.5rem;
+    border-left: 10px solid dodgerblue;
 }
 
 h5 {
@@ -51,7 +59,7 @@ h5 {
 }
 
 p {
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 li {
@@ -113,12 +121,39 @@ figure {
 
 }
 
+.code-block {
+    display: flex;
+    font-family: "Reddit Mono", monospace;
+    font-size: 1rem;
+    background: #1e1e1e;
+    border-radius: .5rem;
+    overflow: auto;
+}
+
+.line-numbers {
+    width: 1.5rem;
+    padding: .5rem;
+    text-align: right;
+    user-select: none;
+    color: lightyellow;
+    background: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.line-numbers span {
+    display: block;
+    line-height: 1.5rem;
+}
+
 pre {
     width: 100%;
+    display: flex;
+    flex-direction: column;
     background-color: #00001d;
     padding: .5rem;
     border-radius: .5rem;
-    margin-bottom: 0.5rem;
     white-space: pre-wrap;
     /* permite quebra de linha dentro de <pre> */
     word-break: break-word;
@@ -128,10 +163,22 @@ pre {
 
     code {
         width: 100%;
+        padding-top: 0;
+        line-height: 1.5rem;
         color: #fafafa;
         font-family: "Reddit Mono", monospace;
-        font-size: 1rem;
     }
+}
+
+/* Single Inline Code */
+code {
+    width: 100%;
+    color: #fafafa;
+    font-family: "Reddit Mono", monospace;
+    background-color: #00001d;
+    padding: 0.25rem .5rem;
+    border-radius: .25rem;
+    margin-bottom: .5rem;
 }
 
 header {
