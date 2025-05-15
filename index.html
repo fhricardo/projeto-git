@@ -5,172 +5,238 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entendendo Git e GitHub</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-size: 20px;
-        }
-
-        body {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            padding: 64px;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        p,
-        code {
-            margin-bottom: 16px;
-        }
-
-        h1 {
-            font-size: 2rem;
-        }
-
-        h2 {
-            font-size: 1.8rem;
-        }
-
-        h3 {
-            font-size: 1.6rem;
-        }
-
-        h4 {
-            font-size: 1.4rem;
-        }
-
-        h5 {
-            font-size: 1.2rem;
-        }
-
-        div {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin-bottom: 64px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/fontawesome.js" defer></script>
 </head>
 
 <body>
-    <div>
+    <header>
         <h1>Entendendo Git e GitHub</h1>
-        <p>Confira essa aula no YouTube <a href="https://youtu.be/anr9aDIJ3YM" target="_blank"
-                title="Aula sobre git e GitHub no YouTube">clicando aqui</a></p>
-        <h2>O que é Git?</h2>
-        <p>Git é um sistema de controle de versão distribuído amplamente utilizado para rastrear as mudanças em arquivos
-            de
-            código-fonte durante o desenvolvimento de software. Ele permite que várias pessoas trabalhem em um mesmo
-            projeto, façam alterações nos arquivos e gerenciem essas mudanças de forma eficiente. Com o Git, os
-            desenvolvedores podem acompanhar o histórico completo de alterações em um projeto, comparar versões
-            anteriores,
-            mesclar diferentes alterações e até mesmo reverter para uma versão anterior, se necessário.</p>
-        <p>Uma das características mais poderosas do Git é a sua capacidade de permitir que os desenvolvedores trabalhem
-            em
-            paralelo em diferentes ramos (branches) do projeto. Isso significa que você pode trabalhar em uma nova
-            funcionalidade ou correção de bug em um ramo separado sem interferir no trabalho principal que está
-            acontecendo
-            em outro ramo. Uma vez concluído o trabalho em um ramo, é possível mesclar (merge) as mudanças de volta ao
-            ramo
-            principal.</p>
-        <p>Além disso, o Git é distribuído, o que significa que cada desenvolvedor tem uma cópia completa do repositório
-            em
-            seu próprio computador. Isso torna o Git robusto e resiliente a falhas, pois não depende de um único
-            servidor
-            centralizado.</p>
-        <p>No geral, o Git é uma ferramenta essencial para o desenvolvimento de software colaborativo e é amplamente
-            utilizado por equipes de desenvolvimento em todo o mundo.</p>
-        <h3>Instalando o Git</h3>
-        <p>Para utilizar o sistema de controle de versão Git em seus projetos, é necessário instalar o Git em seu
-            computador
-            local.</p>
-        <p>O link para download é o listado abaixo:</p>
-        <a href="https://git-scm.com/" target="_blank" title="Download do Git">https://git-scm.com/</a>
-        <p>Após fazer o download, basta instalar o Git em seu computador. Não são necessárias configurações avançadas.
-        </p>
-        <p>Após a instalação, é possível utilizar o próprio terminar do Git (Git Bash) para executar os comandos ou
-            utilizar
-            o terminal do Visual Studio Code. No nosso caso, ficaremos com a segunda opção, que facilitará a utilização
-            e
-            execução dos comandos em nossos projetos.</p>
-        <h2>O que é GitHub?</h2>
-        <p>O GitHub é uma plataforma de hospedagem de código-fonte baseada na web que utiliza o sistema de controle de
-            versão Git. Ele oferece uma variedade de recursos para desenvolvedores e equipes de desenvolvimento
-            colaborarem
-            em projetos de software.</p>
-        <p>No GitHub, os desenvolvedores podem hospedar seus repositórios Git de forma pública ou privada, permitindo
-            que
-            eles compartilhem seu código com outros colaboradores ou mantenham o código privado para uso interno da
-            equipe.
-            Além disso, o GitHub fornece ferramentas poderosas para colaboração, como rastreamento de problemas (issue
-            tracking), pull requests, revisões de código (code reviews), wikis e integração contínua.</p>
-        <p>As pull requests são uma característica fundamental do GitHub, permitindo que os desenvolvedores solicitem a
-            revisão de suas alterações de código por outros membros da equipe antes de mesclar as alterações no ramo
-            principal do repositório. Isso promove a transparência, qualidade e colaboração no processo de
-            desenvolvimento
-            de software.</p>
-        <p>O GitHub também é uma comunidade ativa de desenvolvedores, onde as pessoas podem descobrir, contribuir e
-            colaborar em uma ampla variedade de projetos de código aberto. Ele se tornou um dos principais hubs para o
-            desenvolvimento de software de código aberto, fornecendo uma plataforma central para desenvolvedores de todo
-            o
-            mundo compartilharem e colaborarem em projetos.</p>
-        <p>Em resumo, o GitHub é uma plataforma essencial para o desenvolvimento de software colaborativo, fornecendo
-            ferramentas poderosas para hospedar, gerenciar e colaborar em projetos Git.</p>
-        <h3>Utilizando o GitHub</h3>
-        <p>Para utilizar o GitHub, é necessário criar uma conta na plataforma e realizar o login com seu usuário e
-            senha.
-        </p>
-        <p>O endereço para a plataforma é <a href="https://github.com/" target="_blank"
-                title="GitHub">https://github.com/</a></p>
-        <h4>Criando um novo Repositório</h4>
-        <p>Para criar um novo repositório no GitHub, basta acessar seu perfil, clique na opção Repositories e, em
-            seguida,
-            clique sobre o botão "New" (em azul).</p>
-        <p>Na tela que vai se abrir, dê um nome ao seu repositório, escreva um descrição e selecione o tipo de
-            repositório
-            que será criado, Público ou Privado e clique em Create Repository.</p>
-        <p>É importante observar que o novo repositório terá um endereço específico, esse endereço é o que utilizaremos
-            para
-            vincular o repositório local com o repositório remoto.</p>
-        <h2>Comandos Git</h2>
-        <h3>Para verificar a versão do Git, dentro do terminal do Visual Studio Code, digite:</h3>
-        <code>git --version</code>
-        <p>O resultado deve ser algo do tipo:</p>
-        <code>git version 2.45.0.windows.1</code>
-        <h3>Para inicializar um repositório:</h3>
-        <code>git init</code>
-        <h3>Para alterar o nome da branch principal</h3>
-        <code>git branch -M main</code>
-        <h3>Para adicionar um arquivo específico à uma branch</h3>
-        <code>git add readme.md</code>
-        <h3>Para verificar o status de um repositório local Git</h3>
-        <code>git status</code>
-        <h3>Para adicionar o repositório remoto à um projeto Git</h3>
-        <code>git remote add origin https://github.com/fhricardo/projeto-git.git</code>
-        <h3>Para realizar um commit de um repositório</h3>
-        <code>git commit -m "Primeiro Commit"</code>
-        <h3>Para enviar um commit ao repositório remoto</h3>
-        <code>git push -u origin main</code>
-        <h3>Para adicionar todos os arquivos do projeto para um commit</h3>
-        <code>git add .</code>
-        <h3>Para enviar todos os arquivos de um projeto</h3>
-        <code>git push origin main</code>
-        <h2>Documentação Oficial</h2>
-        <p>Para entender mais sobre esses e outros comandos Git, recomendo visitar a documentação oficial em:</p>
-        <p><a href="https://git-scm.com/doc" target="_blank" title="Documentação Git">https://git-scm.com/doc</a></p>
-        <h2>O que é o Markdown?</h2>
-        <p>Para entender um pouco mais sobre a linguagem Markdown (.md) recomendo a visita a este site:</p>
-        <p><a href="https://wordpress.com/support/markdown-quick-reference/" target="_blank" title="Referências
-    Rápidas de Markdown (em inglês)">Referências Rápidas de Markdown <em>(em inglês)</em></a></p>
-        <p>Para uma referência em Língua Portuguesa, acesse:</p>
-        <p><a href="https://tecnoblog.net/responde/o-que-e-markdown/" target="_blank"
-                title="O que é Markdown, no TechnoBlog">O que é Markdown, no TechnoBlog</a></p>
+    </header>
+    <main>
+        <section>
+            <h2><i class="fa-brands fa-git-alt"></i>O que é Git?</h2>
+            <p>Git é um sistema de controle de versão distribuído amplamente utilizado para rastrear as mudanças em
+                arquivos
+                de
+                código-fonte durante o desenvolvimento de software. Ele permite que várias pessoas trabalhem em um mesmo
+                projeto, façam alterações nos arquivos e gerenciem essas mudanças de forma eficiente. Com o Git, os
+                desenvolvedores podem acompanhar o histórico completo de alterações em um projeto, comparar versões
+                anteriores,
+                mesclar diferentes alterações e até mesmo reverter para uma versão anterior, se necessário.</p>
+            <p>Uma das características mais poderosas do Git é a sua capacidade de permitir que os desenvolvedores
+                trabalhem
+                em
+                paralelo em diferentes ramos (branches) do projeto. Isso significa que você pode trabalhar em uma nova
+                funcionalidade ou correção de bug em um ramo separado sem interferir no trabalho principal que está
+                acontecendo
+                em outro ramo. Uma vez concluído o trabalho em um ramo, é possível mesclar (merge) as mudanças de volta
+                ao
+                ramo
+                principal.</p>
+            <p>Além disso, o Git é distribuído, o que significa que cada desenvolvedor tem uma cópia completa do
+                repositório
+                em
+                seu próprio computador. Isso torna o Git robusto e resiliente a falhas, pois não depende de um único
+                servidor
+                centralizado.</p>
+            <p>No geral, o Git é uma ferramenta essencial para o desenvolvimento de software colaborativo e é amplamente
+                utilizado por equipes de desenvolvimento em todo o mundo.</p>
+            <h3>Instalando o Git</h3>
+            <p>Para utilizar o sistema de controle de versão Git em seus projetos, é necessário instalar o Git em seu
+                computador
+                local.</p>
+            <p>O link oficial do Git é: <a href="https://git-scm.com/" target="_blank"
+                    title="Download do Git">https://git-scm.com/</a></p>
+            <p>Para usuários do Microsoft Windows, faça o download da versão mais recente utilizando o link: <a
+                    href="https://git-scm.com/downloads/win">https://git-scm.com/downloads/win</a></p>
+
+            <p>Após fazer o download, basta instalar o Git em seu computador. Não são necessárias configurações
+                avançadas.
+            </p>
+            <h3>Utilizando o Git</h3>
+            <p>Após a instalação, é possível utilizar o próprio terminar do Git (Git Bash) para executar os comandos ou
+                utilizar
+                o terminal do Visual Studio Code. No nosso caso, ficaremos com a segunda opção, que facilitará a
+                utilização
+                e
+                execução dos comandos em nossos projetos.</p>
+            <p>Vale lembrar que, utilizando o Visual Studio Code, temos uma variedade de "terminais" disponíveis, então
+                devemos utilizar o <strong>Bash</strong> para nossos comando Git.</p>
+            <figure>
+                <img src="assets/vscode-terminal-bash.png" alt="Terminal Bash do Visual Studio Code">
+                <figcaption>Terminal Bash do Visual Studio Code</figcaption>
+            </figure>
+            <h4>Configurando o Terminal do VS Code para utilizar Git Bash por padrão</h4>
+            <p>Para configurar o terminal do Visual Studio Code para utilizar o Git Bash por padrão, siga os passos
+                abaixo:</p>
+            <li>Abra o Visual Studio Code.</li>
+            <li>Clique em <strong>File</strong> no menu superior.</li>
+            <li>Selecione <strong>Preferences</strong> e, em seguida, <strong>Settings</strong>.</li>
+            <li>No campo de busca, digite:<br>
+                <pre><code>terminal.integrated.default</code></pre>
+            </li>
+            <li>Localize a opção <strong>Terminal&gt;Integrate&gt;Default Profile: Windows</strong></li>
+            <li>E na caixa de seleção abaixo, selecione <strong>Git Bash</strong>, como mostra a figura abaixo:</li>
+            <figure>
+                <img src="assets/terminal-select-git-bash.png"
+                    alt="Selecionando Git Bash como padrão de terminal no VS Code">
+                <figcaption>Selecionando Git Bash como terminal padrão</figcaption>
+            </figure>
+            <li>Por último, clique na engrenagem no canto esquerdo e selecione a opção <strong>Apply Settings to all
+                    Profiles</strong>, como mostra a iamgem abaixo:</li>
+            <figure>
+                <img src="assets/apply-settings-to-all-profiles.png" alt="aplicar Configurações para todos os perfis">
+                <figcaption>Aplicar configurações para todos os perfis</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2><i class="fa-brands fa-github"></i>O que é GitHub?</h2>
+            <p>O GitHub é uma plataforma de hospedagem de código-fonte baseada na web que utiliza o sistema de
+                controle
+                de
+                versão Git. Ele oferece uma variedade de recursos para desenvolvedores e equipes de desenvolvimento
+                colaborarem
+                em projetos de software.</p>
+            <p>No GitHub, os desenvolvedores podem hospedar seus repositórios Git de forma pública ou privada,
+                permitindo
+                que
+                eles compartilhem seu código com outros colaboradores ou mantenham o código privado para uso interno
+                da
+                equipe.
+                Além disso, o GitHub fornece ferramentas poderosas para colaboração, como rastreamento de problemas
+                (issue
+                tracking), pull requests, revisões de código (code reviews), wikis e integração contínua.</p>
+            <p>As pull requests são uma característica fundamental do GitHub, permitindo que os desenvolvedores
+                solicitem a
+                revisão de suas alterações de código por outros membros da equipe antes de mesclar as alterações no
+                ramo
+                principal do repositório. Isso promove a transparência, qualidade e colaboração no processo de
+                desenvolvimento
+                de software.</p>
+            <p>O GitHub também é uma comunidade ativa de desenvolvedores, onde as pessoas podem descobrir,
+                contribuir e
+                colaborar em uma ampla variedade de projetos de código aberto. Ele se tornou um dos principais hubs
+                para
+                o
+                desenvolvimento de software de código aberto, fornecendo uma plataforma central para desenvolvedores
+                de
+                todo
+                o
+                mundo compartilharem e colaborarem em projetos.</p>
+            <p>Em resumo, o GitHub é uma plataforma essencial para o desenvolvimento de software colaborativo,
+                fornecendo
+                ferramentas poderosas para hospedar, gerenciar e colaborar em projetos Git.</p>
+            <h3>Utilizando o GitHub</h3>
+            <p>Para utilizar o GitHub, é necessário criar uma conta na plataforma e realizar o login com seu usuário
+                e
+                senha.
+            </p>
+            <p>O endereço para a plataforma é <a href="https://github.com/" target="_blank"
+                    title="GitHub">https://github.com/</a></p>
+            <h4>Criando um novo Repositório</h4>
+            <p>Para criar um novo repositório no GitHub, basta acessar seu perfil, clique na opção Repositories e,
+                em
+                seguida,
+                clique sobre o botão "New" (em azul).</p>
+            <p>Na tela que vai se abrir, dê um nome ao seu repositório, escreva um descrição e selecione o tipo de
+                repositório
+                que será criado, Público ou Privado e clique em Create Repository.</p>
+            <p>É importante observar que o novo repositório terá um endereço específico, esse endereço é o que
+                utilizaremos
+                para
+                vincular o repositório local com o repositório remoto.</p>
+            <h2><i class="fa-solid fa-terminal"></i>Comandos Git</h2>
+            <p>Para verificar a versão do Git, dentro do terminal do Visual Studio Code, digite:</p>
+            <pre><code>git --version</code></pre>
+            <p>O resultado deve ser algo do tipo:</p>
+            <pre><code>git version 2.45.0.windows.1</code></pre>
+            <p>Para configurar o nome do usuário do Git</p>
+            <pre><code>git config --global user.name "Nome do Usuário"</code></pre>
+            <p>Para configurar o email do usuário do Git</p>
+            <pre><code>git config --global user.email "email@exemplo.com"</code></pre>
+            <p>Para inicializar um repositório:</p>
+            <pre><code>git init</code></pre>
+            <p>Para alterar o nome da branch principal</p>
+            <pre><code>git branch -M main</code></pre>
+            <p>Para adicionar um arquivo específico à uma branch</p>
+            <pre><code>git add readme.md</code></pre>
+            <p>Para verificar o status de um repositório local Git</p>
+            <pre><code>git status</code></pre>
+            <p>Para adicionar o repositório remoto à um projeto Git</p>
+            <pre><code>git remote add origin https://github.com/fhricardo/nome-do-projeto.git</code></pre>
+            <p>Para realizar um commit de um repositório</p>
+            <pre><code>git commit -m "Primeiro Commit"</code></pre>
+            <p>Para enviar um commit ao repositório remoto</p>
+            <pre><code>git push -u origin main</code></pre>
+            <p>Para adicionar todos os arquivos do projeto para um commit</p>
+            <pre><code>git add .</code></pre>
+            <p>Para atualizar o repositório remoto com o repositório local</p>
+            <pre><code>git push origin main</code></pre>
+            <p>Para atualizar o repositório local com o repositório remoto</p>
+            <pre><code>git pull origin main</code></pre>
+            <p>Para verificar as configurações do Git</p>
+            <pre><code>git config --list</code></pre>
+            <h2>Documentação Oficial</h2>
+            <p>Para entender mais sobre esses e outros comandos Git, recomendo visitar a documentação oficial em: <a
+                    href="https://git-scm.com/doc" target="_blank" title="Documentação Git">https://git-scm.com/doc</a>
+            </p>
+        </section>
+        <section>
+            <h2><i class="fa-brands fa-markdown"></i>O que é Markdown?</h2>
+            <p>Markdown é uma linguagem de marcação leve criada para facilitar a escrita e formatação de texto
+                simples
+                que será convertido em HTML. Ela permite que você adicione negrito, itálico, listas, links, imagens,
+                blocos de código, entre outros elementos, usando símbolos comuns do teclado (como *, #, [], etc.),
+                sem
+                precisar escrever código HTML diretamente.</p>
+            <h3>Definição simples:</h3>
+            <p>Markdown é uma forma fácil e rápida de formatar texto para a web, com foco na legibilidade e na
+                simplicidade.</p>
+            <h3>Principais usos:</h3>
+            <ul>
+                <li>Documentação técnica</li>
+                <li>Readme files (como no GitHub)</li>
+                <li>Blogs e CMSs (WordPress, Ghost, etc.)</li>
+                <li>Plataformas de ensino</li>
+                <li>Mensagens em fóruns ou comentários</li>
+            </ul>
+            <h3>Exemplos rápidos:</h3>
+            <pre><code># Título de Nível 1
+## Título de Nível 2
+
+**Negrito** ou __negrito__
+*Itálico* ou _itálico_
+[Um link](https://example.com)
+![Uma imagem](imagem.png)
+- Item de lista
+1. Item numerado</code></pre>
+            <h3>O que acontece por trás:</h3>
+            <p>Você escreve com uma sintaxe simples e um conversor Markdown transforma esse texto em HTML válido,
+                que
+                pode ser exibido como uma página formatada no navegador.</p>
+        </section>
+        <section>
+            <h2>Referências</h2>
+            <p><a href="https://youtu.be/anr9aDIJ3YM" target="_blank" title="Aula sobre git e GitHub no YouTube"><i
+                        class="fa-brands fa-youtube"></i>Confira
+                    essa aula no YouTube </a></p>
+            <p><a href="https://wordpress.com/support/markdown-quick-reference/" target="_blank" title="Referências
+    Rápidas de Markdown (em inglês)"><i class="fa-brands fa-markdown"></i>Referências Rápidas de Markdown <em>(em
+                        inglês)</em></a></p>
+            <p><a href="https://tecnoblog.net/responde/o-que-e-markdown/" target="_blank"
+                    title="O que é Markdown, no TechnoBlog"><i class="fa-solid fa-square-arrow-up-right"></i>O que é
+                    Markdown, no TechnoBlog</a></p>
+        </section>
+    </main>
+    <div>
+
+
+
     </div>
+    <footer>
+        <p>Desenvolvido por <a href="https://github.com/fhricardo" target="_blank" title="GitHub">Flávio Ricardo</a>
+    </footer>
 </body>
 
 </html>
